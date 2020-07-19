@@ -1,0 +1,260 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>RoBat</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="imagesR/favicon.png" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ9KPq73KSAc5X_uJUppoVrGV4BPiIg6U&sensor=TRUE&language=he">
+    </script>
+
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="JavaScript.js"></script>
+
+</head>
+<body>
+    <!--פתיחה-->
+    <section id="fold" class="text-center my-auto">
+        <div id="general" class="text-center">
+            <img class="img-fluid d-block text-center" src="imagesR/23.png" />
+            <div class="d-flex justify-content-center">
+                <a href="mailto:explore@firstisrael.org.il" class="kaftor btn mt-5 mb-3 d-block">צודקים, רוצה לרשום את הבת שלי!</a>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="Game.html" id="ghost" class="btn d-block">למשחק התנסות חוויתי לבנות ></a>
+            </div>
+
+        </div>
+        <div id="down">
+            <img src="imagesR/down.png" class="d-flex justify-content-center img-thumbnail border-0 bg-transparent" />
+        </div>
+        <video autoplay muted loop id="myVideo">
+            <source src="imagesR/videoRB.mp4" type="video/mp4" />
+        </video>
+    </section>
+
+    <!--תפריט-->
+    <div>
+        <img id="gradient" class="img-fluid position-fixed" src="imagesR/gradient.png" />
+        <img id="logo" class="img-thumbnail border-0 bg-transparent justify-contect-center position-fixed" src="imagesR/logoWheel.png" />
+        <div id="pina" class="position-fixed float-left">
+            <a id="cornerBtnArshama" href="mailto:explore@firstisrael.org.il" class="kaftor btn position-fixed float-left">להרשמה!</a>
+            <a id="cornerBtnOdot" href="#about" data-toggle="modal" class="kaftor btn position-fixed float-left">אודותינו</a>
+        </div>
+    </div>
+
+
+    <!--הסבר כללי-->
+    <section id="rosh">
+        <div class="row">
+            <div class="col-lg-6 col-12 p-0 m-0 border-primary">
+                <h2  class="meyda">ספרו לי על התכנית!</h2>
+                <p class="mt-0 meyda">
+                    תכנית הרובוטיקה .Lego League Jr של ארגון First, מאפשרת לילדות להתנסות בחשיבה הנדסית, מבניית רובוטים שמורכבים מחלקי לגו ועד כתיבת הקוד שמפעיל אותם.
+                    כל זה קורה תוך דגש על עבודת צוות, שיתוף פעולה, כבוד הדדי ובעיקר - הנאה גדולה. <br />
+                    התכנית נוצרה במטרה להעצים את הביטחון העצמי של הבנות שלכם ובעזרתה הן יוכיחו לעצמן שהן יכולות לעשות כל מה שרק ירצו.
+                </p>
+                <h2 class="meyda d-inline mt-1">למי זה?</h2>
+                <p class="mt-0 d-inline ml-1">
+                    לגילאי גן חובה עד כיתה ד׳
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 p-0 m-0 border-info"><img id="glasses" src="imagesR/glasses_robot.png" /></div>
+        </div>
+    </section>
+    <div  id="nisayon" class="meyda">
+    <a href="mailto:explore@firstisrael.org.il" class="kaftor btn mt-5 mb-3 p-2 d-block">הירשמו לשיעור ניסיון!</a>
+    </div>
+    
+    <img id="buildRobot" class="img-thumbnail border-0 meyda" src="/imagesR/build_robot.png" />
+
+    <!--גרף-->
+    <section id="graph" class=" text-center">
+        <div class="text-right">
+            <h2 class="d-block meyda">ומה תכלס קורה שם?</h2>
+            <div class="text-center">
+                <img id="imgGraph" src="imagesR/graph.png" class="img-thumbnail border-0 p-0 bg-transparent" />
+            </div>
+        </div>
+    </section>
+
+
+    <!--מספרים-->
+    <section id="numbers" class="text-center">
+            <h2 class="text-right meyda">אז למה כדאי לי לרשום אותה?</h2>
+            <div class="row meyda">
+                <div class="col-lg-3 col-12">
+                    <div class="ahuzim">
+                        <div class="precent">%</div>
+                        <div class="myDiv">
+                            <span id="n7" class="digit6">1 2 3 4 5 6 7 8 9 0</span>
+                        </div>
+                        <div class="myDiv">
+                            <span id="n8" class=" digit8">1 2 3 4 5 6 7 8 9 0</span>
+                        </div>
+                        <p>מהבוגרים מעורבים בתחומי ההנדסה, מתמטיקה/טכנולוגיה סטודנטים או אנשי מקצוע</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="ahuzim">
+                        <div class="precent">%</div>
+                        <div class="myDiv">
+                            <span id="n5" class=" digit3">1 2 3 4 5 6 7 8 9 0</span>
+                        </div>
+                        <div class="myDiv">
+                            <span id="n6" class="digit9">1 2 3 4 5 6 7 8 9 0</span>
+                        </div>
+                        <p>מהם שיפרו מיומנויות תקשורת</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="ahuzim">
+                        <div class="precent">%</div>
+                        <div class="myDiv">
+                            <span id="n3" class=" digit8">1 2 3 4 5 6 7 8 9 0</span>
+                        </div>
+                        <div class="myDiv">
+                            <span id="n4" class=" digit8">1 2 3 4 5 6 7 8 9 0</span>
+                        </div>
+                        <p>מהמשתתפיים רוצים להצליח יותר בלימודים</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="ahuzim">
+                        <div class="precent">%</div>
+                        <div class="myDiv">
+                            <span id="n1" class=" digit3">1 2 3 4 5 6 7 8 9 0</span>
+                        </div>
+                        <div class="myDiv">
+                            <span id="n2" class=" digit3">1 2 3 4 5 6 7 8 9 0</span>
+                        </div>
+                        <p>מהנשים יתמחו בהנדסה</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--קרוסלה-->
+    <section id="karusela">
+        <h2 class="meyda">בנות מספרות</h2>
+        <div id="demo" class="carousel slide meyda" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagesR/girl1.png">
+                    <div class="carousel-caption">
+                        <q>מהרגע שהגעתי לחוג הבנתי שאני יכולה לדמיין דברים ואחר כך להכין אותם מאפס ולגרום להם לעבוד. זו חוויה מדהימה ואני מצפה לתחרות הראשונה שלי...</q>
+                        <p>- דנה, 12</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagesR/girl2.png">
+                    <div class="carousel-caption">
+                        <q>בהתחלה כלל לא התחברתי לתחום אבל ההורים שלי שכנעו אותי ללכת לשיעור ניסיון, שלאחריו התאהבתי בזה. רובוטים הם התחביב שלי...</q>
+                        <p>- שרון, 10</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagesR/girl3.png">
+                    <div class="carousel-caption">
+                        <q>החוג עזר לי מאוד בריכוז ובחשיבה, והכרתי הרבה חברים חדשים שגם מתעסקים במה שאני אוהבת. הציונים שלי בבית ספר השתפרו...</q>
+                        <p>- תמר, 8</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-danger moveAnother"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon bg-danger"></span>
+            </a>
+        </div>
+    </section>
+
+    <!--לקראת משחק-->
+    <section id="beforeGame" class="text-center">
+        <div id="playGame" class="text-center mt-5">
+            <div id="gameTXT" class="justify-content-center">
+                <p class="expand">אני אשמח שהבת שלי תרשם, אבל איך אדע אם היא תרצה בעצמה?</p>
+                <p class="itsTime">זה הזמן לקרוא לבת שלכם להתנסות במשחק!</p>
+
+                <a href="Game.html" id="gameBTN" class="kaftor btn mb-5 mt-2 bg-white border-0">בואו נתחיל לשחק!</a>
+            </div>
+            <div id="IMGforDesktop" class="text-center row">
+                <img class="col-12 img-thumbnail border-0 bg-transparent" src="imagesR/pinkDesktop.png" />
+            </div>
+            <div id="IMGforMobile" class="text-center row">
+                <img class="img-thumbnail border-0 bg-transparent" src="imagesR/pinkMobile.png" />
+            </div>
+            <div id="pinkRobot" class="text-left">
+                <img class="img-thumbnail border-0 bg-transparent mb-5" src="imagesR/PinkRobot.png" />
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+       
+    </footer>
+
+
+    <!--Modal-->
+    <div class="modal fade right" id="about" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true" />
+    <div class="modal-dialog momodel modal-fluid" role="document">
+        <div class="modal-content ">
+            <div class="modal-body">
+                <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+                    <span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
+                </button>
+                <div>
+                    <div>
+                        <h1 class="section-heading text-right wow fadeIn  pt-3 mb-3"> מי אנחנו?</h1>
+                        <p>
+                            אנחנו סופיה וטל, סטודנטיות בשנה ג׳ לטכנולוגיות למידה במכון הטכנולוגי חולון וזה הוא פרויקט הגמר שלנו!
+                        </p>
+                        <p>
+                            כשתי בנות שלומדות תואר טכנולוגי, לכבוד הוא לנו לקחת חלק בפרויקט מדהים זה עם ערך מוסף גדול שמטרתו המרכזית היא לקדם את שוויון הזכויות בין נשים לגברים ולצמצם את הפערים המגדריים במקצועות הטכנולוגיים השונים.
+                        </p>
+                        <p>
+                            בשיתוף פעולה עם תכנית הרובוטיקה הפועלת בבית הספר לב רן צורן בניהולו של אייל האתר אופיין ופותח במטרה להגדיל את מודעות ההורים והילדים לחשיבות למידת מקצועות הנדסיים כבר בגיל צעיר ולהנגיש את מקצוע הרובוטיקה גם לבנות.
+                        </p>
+                        <p>
+                            אנחנו מקוות שבסופו של דבר אתר זה יתן לבנות ולהוריהן טעימה מעולם הרובוטיקה ובכך יתנסו בתכנית המעשירה של תכנית FLL הארצית בבית הספר לב-צורן.
+                        </p>
+                    </div>
+                    <div class="d-flex row text-center">
+                        <div class="col-md-2"></div>
+                        <div class="col-6 col-md-4">
+                            <img class="us rounded-circle" src="imagesR/sofia.jpg" />
+                            <p>סופיה זטקובצקי</p>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <img class="us rounded-circle" src="imagesR/tal.jpg" />
+                            <p>טל בר יוסף</p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
